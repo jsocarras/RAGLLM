@@ -1,0 +1,11 @@
+streamlit
+json
+os
+pinecone
+PyMuPDF 
+glob
+tqdm
+hashlib
+pickle
+llama-index
+python-dotenv

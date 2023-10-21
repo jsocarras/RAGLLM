@@ -19,12 +19,15 @@ from dotenv import load_dotenv
 print(f"Initializing script...")
 
 # Step 1: Environment Setup
-load_dotenv(dotenv_path=".env")
+# This line not needed when running in streamlit cloud:
+# load_dotenv(dotenv_path=".env")
 DATA_DIR = './data'
 
 # Step 2: Pinecone Setup
-api_key = os.environ["PINECONE_API_KEY"]
-environment = os.environ["PINECONE_ENVIRONMENT"]
+# api_key = os.environ["PINECONE_API_KEY"]
+# environment = os.environ["PINECONE_ENVIRONMENT"]
+api_key = st.secrets["PINECONE_API_KEY"]
+environment = st.secrets["PINECONE_ENVIRONMENT"]
 pinecone.init(api_key=api_key, environment=environment)
 index_name = "llamaindex-rag-fs"
 

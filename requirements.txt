@@ -1,4 +1,3 @@
-os
 pinecone
 PyMuPDF
 glob

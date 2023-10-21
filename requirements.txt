@@ -1,8 +1,7 @@
-streamlit
 json
 os
 pinecone
-PyMuPDF 
+PyMuPDF
 glob
 tqdm
 hashlib

@@ -1,5 +1,5 @@
 streamlit
-pinecone
+pinecone-client
 PyMuPDF
 tqdm
 llama-index  # Assuming this is the package for llama_index. If not, adjust accordingly.
